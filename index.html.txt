@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puente Nacional Emprende</title>
+  <style>
+    /* 🎨 COLORES BASE */
+    :root {
+      --amarillo: #FFD500;
+      --azul: #003366;
+      --blanco: #fff;
+      --gris: #f4f4f4;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: var(--blanco);
+      color: var(--azul);
+    }
+
+    /* 🔹 ENCABEZADO */
+    header {
+      background-color: var(--amarillo);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 220px;
+    }
+
+    nav {
+      background-color: var(--azul);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--blanco);
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🟡 SECCIÓN INICIO */
+    .inicio {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: var(--amarillo);
+      color: var(--azul);
+    }
+
+    .inicio h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .inicio p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* 🔹 CATEGORÍAS */
+    .categorias {
+      background-color: var(--gris);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .categorias h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .categorias-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .categoria {
+      background-color: var(--amarillo);
+      color: var(--azul);
+      border-radius: 10px;
+      padding: 15px 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .categoria:hover {
+      background-color: var(--azul);
+      color: var(--blanco);
+    }
+
+    /* 🧀 EMPRENDIMIENTOS */
+    .emprendimientos {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .emprendimientos h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .emprendimientos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 0 10px;
+    }
+
+    .emprendimiento-card {
+      border: 2px solid var(--amarillo);
+      border-radius: 15px;
+      padding: 20px;
+      background-color: var(--gris);
+      text-align: left;
+    }
+
+    .emprendimiento-card h3 {
+      color: var(--azul);
+      margin-top: 0;
+    }
+
+    .emprendimiento-card p {
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: var(--azul);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🎥 VIDEOS */
+    .videos {
+      background-color: var(--gris);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .videos h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    iframe {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    /* 📩 CONTACTO */
+    .contacto {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contacto p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    /* ⚫ PIE DE PÁGINA */
+    footer {
+      background-color: var(--azul);
+      color: var(--blanco);
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🔹 ENCABEZADO -->
+  <header>
+    <img src="logo-emprende.jpg" alt="Puente Nacional Emprende" />
+  </header>
+
+  <!-- 🔹 MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#categorias">Categorías</a>
+    <a href="#emprendimientos">Emprendimientos</a>
+    <a href="#videos">Videos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- 🟡 INICIO -->
+  <section id="inicio" class="inicio">
+    <h1>Puente Nacional Emprende</h1>
+    <p>Puente Nacional Emprende es una vitrina virtual creada para visibilizar y fortalecer los emprendimientos del municipio de Puente Nacional, Santander. Aquí encontrarás talento local, productos únicos, iniciativas sostenibles y destinos turísticos que reflejan la esencia y la creatividad de nuestra gente.</p>
+  </section>
+
+  <!-- 🟢 CATEGORÍAS -->
+  <section id="categorias" class="categorias">
+    <h2>Categorías</h2>
+    <div class="categorias-container">
+      <div class="categoria">Gastronomía y alimentos</div>
+      <div class="categoria">Belleza y cuidado personal</div>
+      <div class="categoria">Moda y confección</div>
+      <div class="categoria">Agroindustria</div>
+      <div class="categoria">Artesanías</div>
+      <div class="categoria">Servicios</div>
+      <div class="categoria">Lácteos 🧀</div>
+      <div class="categoria">Turismo local</div>
+      <div class="categoria">+ Agregar categoría</div>
+    </div>
+  </section>
+
+  <!-- 🧀 EMPRENDIMIENTOS -->
+  <section id="emprendimientos" class="emprendimientos">
+    <h2>Emprendimientos Destacados</h2>
+    <div class="emprendimientos-grid">
+      
+      <!-- 🔸 EJEMPLO: QUESOS DON JOSÉ -->
+      <div class="emprendimiento-card">
+        <h3>Quesos Don José</h3>
+        <p><strong>Categoría:</strong> Lácteos 🧀</p>
+        <p>Quesos Don José es un emprendimiento familiar con más de 50 años de historia. Fundado en 1971 por José del Carmen Torres, se dedica a la producción artesanal de queso de hoja, elaborado con técnicas ancestrales y procesos tecnificados que garantizan frescura y calidad.</p>
+        <div class="contact-links">
+          <a href="https://wa.me/3187416458" target="_blank">WhatsApp</a> |
+          <a href="https://instagram.com/quesos_donjose" target="_blank">Instagram</a> |
+          <a href="https://facebook.com/quesosdonjose" target="_blank">Facebook</a>
+        </div>
+      </div>
+
+      <!-- 💡 PARA AGREGAR NUEVOS EMPRENDIMIENTOS -->
+      <!-- DUPLICA ESTE BLOQUE Y CAMBIA LOS DATOS -->
+      <!--
+      <div class="emprendimiento-card">
+        <h3>Nombre del Emprendimiento</h3>
+        <p><strong>Categoría:</strong> (Selecciona categoría)</p>
+        <p>Descripción breve del emprendimiento...</p>
+        <div class="contact-links">
+          <a href="https://wa.me/TUNUMERO" target="_blank">WhatsApp</a> |
+          <a href="#">Instagram</a> |
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- 🎥 VIDEOS -->
+  <section id="videos" class="videos">
+    <h2>Videos de Emprendimientos y Turismo</h2>
+    <div class="video-grid">
+      <!-- Inserta aquí tus videos de YouTube -->
+      <!-- EJEMPLO -->
+      <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video de ejemplo" allowfullscreen></iframe> -->
+    </div>
+  </section>
+
+  <!-- 📩 CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>Correo: <strong>emprendimientopuentenal2427@gmail.com</strong></p>
+    <p>Síguenos en redes sociales:</p>
+    <p>
+      <a href="#" target="_blank">Facebook</a> |
+      <a href="#" target="_blank">Instagram</a> |
+      <a href="#" target="_blank">WhatsApp</a>
+    </p>
+  </section>
+
+  <!-- ⚫ PIE DE PÁGINA -->
+  <footer>
+    <img src="logo-alcaldia.jpg" alt="Alcaldía Puente Nacional" />
+    <p>© 2025 Alcaldía Municipal de Puente Nacional | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
